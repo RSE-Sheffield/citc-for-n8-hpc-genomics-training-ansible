@@ -27,7 +27,7 @@
     mode: u=rw,g=r,o=r
 
 - name: Ensure Lmod used over environment-modules
-  community.general.alternatives:
+  alternatives:
     name: modules.sh
     link: /etc/hadoop/conf
     path: /usr/share/lmod/lmod/init/profile
