@@ -23,5 +23,11 @@
 - name: install lmod config
   copy:
     dest: /etc/profile.d/10-modules.sh
-    content: MODULEPATH={{ software_install_dir }}/manual_modules/
+    content: MODULEPATH={{ software_install_dir }}/modules/all
     mode: u=rw,g=r,o=r
+
+- name: Ensure Lmod used over environment-modules
+  community.general.alternatives:
+    name: modules.sh
+    link: /etc/hadoop/conf
+    path: /usr/share/lmod/lmod/init/profile
