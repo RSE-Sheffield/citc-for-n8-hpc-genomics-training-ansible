@@ -18,7 +18,9 @@ install_packages:
   - openmpi-devel
   - python3-devel
   - "@Development Tools"
+  - gcc-gfortran
   - vim
+  - openssl-devel
 
 mpi_packages:
   oracle:
