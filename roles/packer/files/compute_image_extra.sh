@@ -13,4 +13,5 @@
 sudo yum -y groupinstall "Development Tools"
 sudo yum -y install cmake gcc-gfortran
 sudo yum -y install openssl-devel
+sudo yum -y install nano
 echo 'export MODULEPATH=/mnt/shared/modules/all:$MODULEPATH' | sudo tee /etc/profile.d/10-modules.sh

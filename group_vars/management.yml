@@ -21,6 +21,7 @@ install_packages:
   - gcc-gfortran
   - vim
   - openssl-devel
+  - nano
 
 mpi_packages:
   oracle:
